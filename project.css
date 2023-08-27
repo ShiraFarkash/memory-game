@@ -1,0 +1,227 @@
+body{
+    background-image: url(background.png) ;
+    width: 100%;height:100%;
+    text-align: center;
+    
+}
+.welcome {
+    text-align: center;
+    font-size: 200px;
+    font-family: Aharoni;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    animation-duration: 3s;
+    animation-name: lights;
+
+
+}
+
+@keyframes lights {
+    0% {opacity: 0; /*font-size:80px*/}
+
+    50%{opacity: 0.5; /*font-size:100px*/}
+
+    100% {opacity: 2;/* font-size:80px*/}
+   
+}
+
+.welcome2 {
+    font-family: Aharoni;
+    font-size: 100px;
+    margin: 10px;
+    display: inline-block;
+    color:#000000;
+    width: 15%;
+    border: white solid 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: lights;
+}
+
+.welcome2:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+.can{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 60px; 
+    display:none;
+}
+
+.Title{
+/* margin-left: 10%;    */
+text-align: left;   
+display: inline-block;
+font-family: Aharoni;
+font-size: 500%;
+text-decoration-line: underline;
+
+}
+
+.Title2{
+    /* text-align: center; */
+    margin-left: 60%;  
+    display: inline-block;
+    
+    
+}
+.msg{
+    margin-top: 10%;
+    display: inline-block;
+    font-size: 300%;
+    font-family: Aharoni;
+    text-align:center ;  
+}
+
+.clock{
+    display: inline-block;
+    width:250px;
+    height: 70px;
+    /* border-style:solid; */
+    border-color:#000000;
+    border-width:4px;
+    margin-left: 30px;
+    margin-right:300px; 
+    border-radius: 4%; 
+    font-family: Aharoni;
+    font-size: 80px;
+    text-align: center;
+}
+
+.startButtom{
+    border-radius: 20px;
+    height:100px;
+    position: absolute;
+    left: 790px;
+    top: 400px;  
+     z-index: 1; 
+    display: none;
+    opacity: 1;
+    text-align: center;
+    border-color: #000000;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+#startButtomBackGroung{
+
+  
+    width: 100%;
+    height: 1000px;;
+    margin: 0%;
+
+}
+
+#Allcards{
+    background-color: transparent;
+    perspective: 1000px;
+    display: inline-block;
+    width: 30%;
+    /* margin-left: 32%; */
+    /* margin-top: 5%; */
+    /* background-position: center; */
+}
+
+
+.theCard{
+    position: relative;
+    /* position: absolute; */
+    display: inline-block;
+    width: 130px;
+    height: 180px;
+    transform-style: preserve-3d;
+    /* transition: all 0.5s ease; */
+    transition: transform 0.8s;
+    margin: 5px;
+
+}
+
+.StaylForCard{
+    width:  100%;
+    height: 100%;
+    background-image: url(cards.png);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* .theCard  :hover {
+    transform: rotateY(180deg)
+} */
+
+
+.card1{
+    /* display: inline-block; */
+    width: 130px;
+    height: 170px;
+    margin: 5px;
+    background-image: url(1.png);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card2{
+    /* display: inline-block; */
+    width: 130px;
+    height: 170px;
+    margin: 5px;
+    background-image: url(2.png);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card3{
+    /* display: inline-block; */
+    width: 130px;
+    height: 170px;
+    margin: 5px;
+    background-image: url(3.png);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card4{
+    /* display: inline-block; */
+    width: 130px;
+    height: 170px;
+    margin: 5px;
+    background-image: url(4.png);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card5{
+    /* display: inline-block; */
+    width: 130px;
+    height: 170px;
+    margin: 5px;
+    background-image: url(5.png);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card6{
+    /* display: inline-block; */
+    width: 130px;
+    height: 170px;
+    margin: 5px;
+    background-image: url(6.png);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.rotate{
+    transform: rotateY(180deg);
+}
+.rotateBack{
+    transform: rotateY(-180deg);
+}

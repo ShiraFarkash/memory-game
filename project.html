@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <source id="ClickSound" style="display: none;" src="Click.mp3" type="audio"> -->
+    <div id="startButtomBackGroung">
+        <div style="display: block; width: max-content; ">
+
+            <div class="clock"></div>
+            <h1 class="welcome" style="display: inline-block">welcome </h1> <br />
+        </div>
+
+        <p class="welcome" style="font-size: 70px"> Memory Game</p> <br /><br />
+        <p class="welcome" style="font-size: 50px ; display: inline-block;"> choose level:</p>
+        <div class="welcome2" onclick="myLevel(120)">1</div>
+        <div class="welcome2" onclick="myLevel(90)">2 </div>
+        <div class="welcome2" onclick="myLevel(60)">3 </div>
+        <div class="welcome2" onclick="myLevel(30)">4 </div>
+        <div style="display: block">
+            <div class="Title"></div>
+            <div class="Title2 Title"></div>
+        </div>
+    <div style="display: flex;">
+<div style="width: 20%;">
+</br></br></br></br>
+    <div class="attempts" style="display:inline-block; font-size: 200%;"></div></br>
+    <div class="Score" style="display:inline-block; font-size: 200%;"></div></br>
+    <div class="allScore" style="display:inline-block; font-size: 200%;"></div>
+</div>
+        <div class="can"> <canvas id="myCanvas1" width="50" height="600" style="display:inline-block;"></canvas></div>
+
+        
+        <!-- <div class="startButtom" style="width: 300px; font-size: 70px; border-radius: 15px;
+     background-color: white; height:100px ;text-align: center;font-family: Aharoni;"><p style="margin-top: 15px">start</p></div> -->
+        <img class="startButtom" src="stat.PNG" onclick="startTheGame()">
+        <img class="startButtom" style="width: 500px; height: 200px;  left: 650px; top: 300px; " src="win.PNG" onclick="startAgain()">
+        <img class="startButtom" style="width: 500px; height: 200px;left: 650px; top: 300px; " src="lost.png" onclick="startAgain()">
+        <div id="Allcards" style="width: 30%;" ></div>
+        <div class="can"><canvas id="myCanvas2" width="50" height="600" style="display:inline-block;"></canvas></div>
+        <!-- <div class="msg" style="display:inline-block;"></div> -->
+        <div style="display: inline-block; height: 30%;width: 20%;" >
+        <div class="msg" style="display:inline-block; font-size: 200%;"></div></div>
+    </div>
+</div>
+</body>
+
+</html>
